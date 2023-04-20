@@ -68,3 +68,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Things to learn from working on this project
+
+Of course, I'd be happy to help you learn ReactJS!
+
+ReactJS is a popular JavaScript library used for building user interfaces. Here are some key concepts to understand when learning ReactJS:
+
+## Components: 
+ReactJS is based on the concept of components, which are reusable building blocks for creating user interfaces. Components can be thought of as custom HTML tags that define what should be displayed on the screen.
+
+## Virtual DOM: 
+ReactJS uses a virtual DOM, which is a lightweight representation of the actual DOM. React updates the virtual DOM when changes are made, and then updates the actual DOM only where necessary. This approach makes updates faster and more efficient.
+
+## JSX: 
+JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files. JSX makes it easy to create React components and render them to the DOM.
+
+## State: 
+React components can have state, which is an object that contains data that can change over time. When the state changes, React will automatically update the component to reflect the new state.
+
+### To get started with ReactJS, you will need to have a basic understanding of HTML, CSS, and JavaScript. You can then follow these steps:
+
+1. Install Node.js and NPM on your computer.
+
+2. Create a new React project using the Create React App command.
+
+3. Start building your first React component. You can use JSX to define the component's structure and use state to manage its data.
+
+4. Once you've built your component, you can render it to the DOM using ReactDOM.
+
+5. You can then build more complex components and use React's props system to pass data between them.
+
+6. Finally, you can add interactivity to your components by using event handlers and other React features.
+
+There are many great resources available online for learning ReactJS, including the official React documentation and various online tutorials and courses. I recommend starting with a basic tutorial and gradually working your way up to more advanced topics. Good luck!
