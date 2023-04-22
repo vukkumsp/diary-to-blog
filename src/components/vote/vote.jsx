@@ -4,7 +4,8 @@ import { useState } from 'react';
 function Vote({ voters, user }) {
     const [upVoters, setUpVoters] = useState(voters.upVoters);
     const [downVoters, setDownVoters] = useState(voters.downVoters);
-    const [votersData, setVoters] = useState(voters);
+    // const [votersData, setVoters] = useState(voters); 
+    //keeping the whole json as a state is not working
 
     return (
         <div>
@@ -45,43 +46,25 @@ function Vote({ voters, user }) {
         return result;
     }
 
-    function removeVote(selectedVoters, user) {
-        const index = selectedVoters.indexOf(user);
-        if (index > -1) { // only splice array when item is found
-            selectedVoters.splice(index, 1); // 2nd parameter means remove one item only
-        }
-
-        selectedVoters.filter(votedUser =>
-            votedUser !== user
-        )
-    }
-
     function upVote(voters, user) {
         voters.upVoters = upVoters.concat(user);
         setUpVoters(voters.upVoters);
-        
         voters.downVoters = downVoters.filter(votedUser =>
             votedUser !== user
         );
-        // removeVote(voters.downVoters, user);
         setDownVoters(voters.downVoters);
-        setVoters(voters);
+        // setVoters(voters);
         console.log("upVote for " + user, voters);
     }
 
     function downVote(voters, user) {
-        // voters.downVoters.push(user);
         voters.downVoters = downVoters.concat(user);
         setDownVoters(voters.downVoters);
-        // voters.downVoters = votersData.downVoters.concat(user);
-        
-        // removeVote(voters.upVoters, user);
         voters.upVoters = upVoters.filter(votedUser =>
             votedUser !== user
         );
         setUpVoters(voters.upVoters);
-
-        setVoters(voters);
+        // setVoters(voters);
         console.log("downVote for " + user, voters);
     }
 }
