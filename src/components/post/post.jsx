@@ -5,6 +5,7 @@ function Post({value}) {
   return (
     <div>
         <h3>{value.title}</h3>
+        <p>{value.content}</p>
     </div>
   );
 }

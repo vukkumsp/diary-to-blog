@@ -6,7 +6,7 @@ import Body from './layout/body/body';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Body />
     </div>
