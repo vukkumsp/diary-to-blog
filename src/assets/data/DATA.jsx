@@ -5,14 +5,14 @@ function DATA() {
         "content": "How are you doing ?",
         "voters": {
             "upVoters":["asdfdsaf"],
-            "downVoters":["asdfsdaf","asdfsdaf"]
+            "downVoters":["asdfsdaf","asdfsdafq"]
         }
     },
     {
         "title": "Hello Diary #2",
         "content": "How are you doing ? again",
         "voters": {
-            "upVoters":["asdfsdaf","asdfsdaf","asfdsfa"],
+            "upVoters":["asdfsdaf","asdfsdafw","asfdsfa"],
             "downVoters":["asdfsad","afdasf","adfasdfas","asdfeee"]
         }
     },
