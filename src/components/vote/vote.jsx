@@ -9,7 +9,7 @@ function Vote({ voters, user }) {
                 </span>
 
             ) : (
-                <span className="btn btn-primary">
+                <span className="btn btn-primary" onClick={()=>upVote(voters, user)}>
                     <i className="bi bi-arrow-up-circle"></i>
                 </span>
 
@@ -23,7 +23,7 @@ function Vote({ voters, user }) {
                 </span>
 
             ) : (
-                <span className="btn btn-danger">
+                <span className="btn btn-danger"  onClick={()=>downVote(voters, user)}>
                     <i className="bi bi-arrow-down-circle"></i>
                 </span>
 
@@ -41,12 +41,14 @@ function isUserVoted(voters, user) {
     return result;
 }
 
-function upVote() {
-    
+function upVote(voters, user) {
+    voters.upVoters.push(user);
+    console.log("upVote for "+user, voters);
 }
 
-function downVote() {
-
+function downVote(voters, user) {
+    voters.downVoters.push(user);
+    console.log("downVote for "+user, voters);
 }
 
 
