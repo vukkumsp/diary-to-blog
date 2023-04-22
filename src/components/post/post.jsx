@@ -1,13 +1,26 @@
 import React from 'react';
 
-function Post({value}) {
-    console.log(value);
+import Vote from './../vote/vote';
+
+const user = "asdfsdaf";
+
+function Post({ value }) {
+  // console.log(value);
   return (
     <div>
-      <div className="card p-2 m-2">
-        <h6 className="card-title">{value.title}</h6>
-        <p className="card-text">{value.content}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div className="card p-2 m-2 shadow-sm bg-white rounded">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <h6 className="card-title">{value.title}</h6>
+          </li>
+          <li class="list-group-item">
+            <p className="card-text">{value.content}</p>
+          </li>
+          <li class="list-group-item">
+            <Vote voters={value.voters} user={user}></Vote>
+          </li>
+        </ul>
+
       </div>
     </div>
   );
