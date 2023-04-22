@@ -4,8 +4,10 @@ function Post({value}) {
     console.log(value);
   return (
     <div>
-        <h3>{value.title}</h3>
-        <p>{value.content}</p>
+      <div className="card p-2 m-2">
+        <h5 className="card-title">{value.title}</h5>
+        <p className="card-text">{value.content}</p>
+      </div>
     </div>
   );
 }
