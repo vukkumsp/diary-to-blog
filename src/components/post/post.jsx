@@ -7,7 +7,7 @@ const user = "asdfsdaf";
 function Post({ value }) {
   // console.log(value);
   return (
-    <div>
+    <div onClick={()=>console.log(value)}>
       <div className="card p-2 m-2 shadow-sm bg-white rounded">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
