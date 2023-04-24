@@ -17,7 +17,7 @@ function Post({ value }) {
             <p className="card-text">{value.content}</p>
           </li>
           <li class="list-group-item">
-            <Vote voters={value.voters} user={user}></Vote>
+            <Vote postValue={value} voters={value.voters} user={user}></Vote>
           </li>
         </ul>
 
