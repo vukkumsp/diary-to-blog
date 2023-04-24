@@ -1,14 +1,9 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import DBService from '../../services/db/dbService';
 
 function Vote({ postValue, voters, user }) {
-    // const voters = postValue.voters;
-    // const user = postValue.user;
     const [upVoters, setUpVoters] = useState(voters.upVoters);
     const [downVoters, setDownVoters] = useState(voters.downVoters);
-    // const [votersData, setVoters] = useState(voters); 
-    //keeping the whole json as a state is not working
 
     return (
         <div>
@@ -45,7 +40,6 @@ function Vote({ postValue, voters, user }) {
 
     function isUserVoted(voters, user) {
         let result = voters.find(voter => voter.valueOf() === user.valueOf());
-        // console.log(voters, user, result);
         return result;
     }
 
@@ -61,9 +55,6 @@ function Vote({ postValue, voters, user }) {
         postValue.voters.downVoters = voters.downVoters;
 
         DBService.updatePost(postValue.id, postValue, console.log);
-
-        // setVoters(voters);
-        // console.log("upVote for " + user, voters);
     }
 
     function downVote(postValue, voters, user) {
@@ -78,9 +69,6 @@ function Vote({ postValue, voters, user }) {
         postValue.voters.downVoters = voters.downVoters;
 
         DBService.updatePost(postValue.id, postValue, console.log);
-
-        // setVoters(voters);
-        // console.log("downVote for " + user, voters);
     }
 }
 
