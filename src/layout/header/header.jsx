@@ -5,7 +5,7 @@ import './header.css';
 function Header() {
   return (
     <div className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
+      <div className="container-fluid AppHeader">
         <a className="navbar-brand" href="#">
           <h4>Diary to Blog</h4>
         </a>
