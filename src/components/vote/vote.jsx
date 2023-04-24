@@ -44,6 +44,7 @@ function Vote({ postValue, voters, user }) {
     }
 
     function upVote(postValue, voters, user) {
+        console.log("upVote", postValue);
         voters.upVoters = upVoters.concat(user);
         setUpVoters(voters.upVoters);
         voters.downVoters = downVoters.filter(votedUser =>
@@ -58,6 +59,7 @@ function Vote({ postValue, voters, user }) {
     }
 
     function downVote(postValue, voters, user) {
+        console.log("downVote", postValue);
         voters.downVoters = downVoters.concat(user);
         setDownVoters(voters.downVoters);
         voters.upVoters = upVoters.filter(votedUser =>
