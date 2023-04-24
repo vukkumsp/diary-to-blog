@@ -11,7 +11,7 @@ function Body() {
   }, []);
 
   let postsList = posts.map((item, index) => {
-    return <Post value={item}></Post>
+    return <Post postData={item}></Post>
   });
 
   return (
