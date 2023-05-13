@@ -1,3 +1,31 @@
+# React Topics:
+
+## Hooks: ( https://react.dev/reference/react )
+1. State Hooks
+  - useState
+  - useReducer
+2. useContext
+3. Ref Hooks
+  - useRef
+  - useImperativeHandle
+4. Effect Hooks
+  - useEffect
+  - useLayoutEffect
+  - useInsertionEffect
+5. Performance Hooks
+  - useMemo
+  - useCallback
+  - useTransition
+  - useDeferredValue
+6. Other Hooks
+  - useDebugValue
+  - useId
+  - useSyncExternalStore
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
